@@ -7,14 +7,8 @@
  */
 
 import React from 'react';
-import {
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-  SafeAreaView
-} from "react-native";
-import Header from "./src/components/Header";
+import {ScrollView, StyleSheet, Text, View, SafeAreaView} from 'react-native';
+import Header from './src/components/Header';
 
 const App = () => {
   return (
@@ -24,7 +18,7 @@ const App = () => {
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.container}>
-            <Text> sadasdasdsds </Text>
+          <Text> sadasdasdsds </Text>
         </ScrollView>
       </View>
     </SafeAreaView>
@@ -33,10 +27,10 @@ const App = () => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "transparent",
-    height: "100%",
-    width: "100%",
-    display: "flex",
+    backgroundColor: 'transparent',
+    height: '100%',
+    width: '100%',
+    display: 'flex',
   },
 });
 
