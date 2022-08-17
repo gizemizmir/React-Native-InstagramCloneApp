@@ -1,10 +1,13 @@
 import React from "react";
-import {View, StyleSheet, Text} from "react-native";
+import {View, StyleSheet} from "react-native";
+import Logo from "./Logo";
+import RightIcons from "./RightIcons";
 
 const Header = () => {
     return (
         <View style={styles.topHeader}>
-            <Text> Header </Text>
+            <Logo />
+            <RightIcons />
         </View>
     );
 };
