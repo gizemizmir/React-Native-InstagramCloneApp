@@ -9,12 +9,14 @@
 import React from 'react';
 import {ScrollView, StyleSheet, Text, View, SafeAreaView} from 'react-native';
 import Header from './src/components/Header';
+import Story from './src/components/Story';
 
 const App = () => {
   return (
     <SafeAreaView>
       <View style={styles.container}>
         <Header />
+        <Story />
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.container}>
