@@ -20,6 +20,7 @@ const App = () => {
         <Header />
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
+          showsVerticalScrollIndicator={false}
           style={styles.container}>
           <Story />
           <Post />

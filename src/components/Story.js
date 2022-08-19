@@ -1,53 +1,6 @@
 import React from 'react';
 import {View, StyleSheet, Image, ScrollView, Text} from 'react-native';
-
-const users = [
-  {
-    id: 1,
-    image: 'https://i.pravatar.cc/300',
-    name: 'Müslüm Gürses',
-  },
-  {
-    id: 2,
-    image: 'https://i.pravatar.cc/300',
-    name: 'Zeynep Bastık',
-  },
-  {
-    id: 3,
-    image: 'https://i.pravatar.cc/300',
-    name: 'Sena Şener',
-  },
-  {
-    id: 4,
-    image: 'https://i.pravatar.cc/300',
-    name: 'Cem Adrian',
-  },
-  {
-    id: 5,
-    image: 'https://i.pravatar.cc/300',
-    name: 'Ezhel',
-  },
-  {
-    id: 6,
-    image: 'https://i.pravatar.cc/300',
-    name: 'Melek Mosso',
-  },
-  {
-    id: 7,
-    image: 'https://i.pravatar.cc/300',
-    name: 'Ceylan Ertem',
-  },
-  {
-    id: 8,
-    image: 'https://i.pravatar.cc/300',
-    name: 'Emircan İğrek',
-  },
-  {
-    id: 9,
-    image: 'https://i.pravatar.cc/300',
-    name: 'Bülent Ersoy',
-  },
-];
+import userData from '../data/userData.json';
 
 const Story = () => {
   return (
@@ -57,7 +10,7 @@ const Story = () => {
           <Image
             style={styles.profile}
             source={{
-              uri: 'https://i.pravatar.cc/300',
+              uri: 'https://i.pravatar.cc/300?img=26',
             }}
           />
           <View style={styles.plusContainer}>
@@ -67,7 +20,7 @@ const Story = () => {
             Your story
           </Text>
         </View>
-        {users.map((user, index) => (
+        {userData.map((user, index) => (
           <View style={styles.story} key={index}>
             <Image
               style={styles.profile}
@@ -112,8 +65,8 @@ const styles = StyleSheet.create({
   },
   plusContainer: {
     position: 'absolute',
-    bottom: 30,
-    right: 5,
+    bottom: 25,
+    right: 3,
     width: 25,
     height: 25,
     borderRadius: 50,

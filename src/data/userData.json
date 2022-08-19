@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "image": "https://i.pravatar.cc/300?img=69",
+        "name": "kenandogulu",
+        "postImage": "https://picsum.photos/300/300",
+        "postLiked": "Liked by ezhel and 923,000 others",
+        "imageDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+        "postComment": "View all 6000 comments",
+        "postDate": "1 hours ago"
+      },
+      {
+        "id": 2,
+        "image": "https://i.pravatar.cc/300?img=36",
+        "name": "zeynepbastik",
+        "postImage": "https://picsum.photos/301/301",
+        "postLiked": "Liked by kenandogulu and 123,000 others",
+        "imageDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+        "postComment": "View all 100 comments",
+        "postDate": "3 hours ago"
+      },
+      {
+        "id": 3,
+        "image": "https://i.pravatar.cc/300?img=32",
+        "name": "senasener",
+        "postImage": "https://picsum.photos/302/302",
+        "postLiked": "Liked by zeynepbastik and 203,720 others",
+        "imageDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+        "postComment": "View all 8120 comments",
+        "postDate": "4 hours ago"
+      },
+      {
+        "id": 4,
+        "image": "https://i.pravatar.cc/300?img=56",
+        "name": "cemadrian",
+        "postImage": "https://picsum.photos/303/303",
+        "postLiked": "Liked by senasener and 23,623 others",
+        "imageDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+        "postComment": "View all 1245 comments",
+        "postDate": "5 hours ago"
+      },
+      {
+        "id": 5,
+        "image": "https://i.pravatar.cc/300?img=60",
+        "name": "ezhel",
+        "postImage": "https://picsum.photos/304/304",
+        "postLiked": "Liked by cemadrian and 612,456 others",
+        "imageDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+        "postComment": "View all 567 comments",
+        "postDate": "6 hours ago"
+      },
+      {
+        "id": 6,
+        "image": "https://i.pravatar.cc/300?img=43",
+        "name": "melekmosso",
+        "postImage": "https://picsum.photos/305/305",
+        "postLiked": "Liked by ezhel and 97,123 others",
+        "imageDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+        "postComment": "View all 432 comments",
+        "postDate": "12 hours ago"
+      },
+      {
+        "id": 7,
+        "image": "https://i.pravatar.cc/300?img=45",
+        "name": "ceylanertem",
+        "postImage": "https://picsum.photos/306/306",
+        "postLiked": "Liked by melekmosso and 23,123 others",
+        "imageDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+        "postComment": "View all 1345 comments",
+        "postDate": "1 day ago"
+      },
+      {
+        "id": 8,
+        "image": "https://i.pravatar.cc/300?img=61",
+        "name": "ozbi",
+        "postImage": "https://picsum.photos/307/307",
+        "postLiked": "Liked by ceylanertem and 129,760 others",
+        "imageDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+        "postComment": "View all 6786 comments",
+        "postDate": "2 day ago"
+      },
+      {
+        "id": 9,
+        "image": "https://i.pravatar.cc/300?img=62",
+        "name": "edis",
+        "postImage": "https://picsum.photos/308/308",
+        "postLiked": "Liked by ozbi and 456,324 others",
+        "imageDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+        "postComment": "View all 1973 comments",
+        "postDate": "3 day ago"
+      },
+      {
+        "id": 10,
+        "image": "https://i.pravatar.cc/300?img=31",
+        "name": "serenaysarikaya",
+        "postImage": "https://picsum.photos/308/308",
+        "postLiked": "Liked by zeynepbastik and 981,324 others",
+        "imageDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+        "postComment": "View all 9632 comments",
+        "postDate": "4 day ago"
+      }
+]

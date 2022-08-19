@@ -2,202 +2,91 @@ import React from 'react';
 import {View, StyleSheet, Image, Text} from 'react-native';
 import MIcon from 'react-native-vector-icons/MaterialIcons';
 import FAIcon from 'react-native-vector-icons/FontAwesome';
+import userData from '../data/userData.json';
 
 const Post = () => {
   return (
     <View>
-      <View style={styles.postContainer}>
-        <View style={styles.postHeader}>
-          <View style={styles.postUser}>
-            <Image
-              style={styles.userImage}
-              source={{
-                uri: 'https://i.pravatar.cc/300',
-              }}
-            />
-            <Text style={styles.userName}>Gizem İzmir </Text>
-          </View>
-          <MIcon name="more-vert" size={20} color="#000" />
-        </View>
-        <Image
-          style={styles.postImage}
-          source={{
-            uri: 'https://picsum.photos/300/300',
-          }}
-        />
-        <View>
-          <View style={styles.postActions}>
-            <View style={styles.leftActions}>
-              <FAIcon
-                name="heart-o"
-                size={25}
-                color="#000"
-                style={styles.icons}
+      {userData.map((user, index) => (
+        <View style={styles.postContainer} key={index}>
+          <View style={styles.postHeader}>
+            <View style={styles.postUser}>
+              <Image
+                style={styles.userImage}
+                source={{
+                  uri: user.image,
+                }}
               />
-              <FAIcon
-                name="comment-o"
-                size={25}
-                color="#000"
-                style={styles.icons}
-              />
-              <FAIcon
-                name="send-o"
-                size={25}
-                color="#000"
-                style={styles.icons}
-              />
+              <Text style={styles.userName}>{user.name}</Text>
             </View>
-            <FAIcon name="bookmark-o" size={25} color="#000" />
+            <MIcon name="more-vert" size={20} color="#000" />
           </View>
-          <Text style={styles.postLike}>23 kişi beğendi</Text>
-          <View style={styles.postDescriptions}>
-            <Text>
-              <Text style={styles.userName}>Gizem İzmir </Text>Lorem Ipsum is
-              simply dummy text of the printing and typesetting industry...{' '}
-              <Text style={styles.postComments}>devamı</Text>
-            </Text>
-            <Text style={styles.postComments}>20 yorumun tümünü gör</Text>
-          </View>
-          <View style={styles.postNewComment}>
-            <Image
-              style={styles.postNewCommentImage}
-              source={{
-                uri: 'https://picsum.photos/300/300',
-              }}
-            />
-            <Text style={styles.postComments}>Yorum ekle...</Text>
-          </View>
-          <Text style={styles.postTime}>3 saat önce</Text>
-        </View>
-      </View>
-      <View style={styles.postContainer}>
-        <View style={styles.postHeader}>
-          <View style={styles.postUser}>
-            <Image
-              style={styles.userImage}
-              source={{
-                uri: 'https://i.pravatar.cc/300',
-              }}
-            />
-            <Text style={styles.userName}>Gizem İzmir </Text>
-          </View>
-          <MIcon name="more-vert" size={20} color="#000" />
-        </View>
-        <Image
-          style={styles.postImage}
-          source={{
-            uri: 'https://picsum.photos/310/310',
-          }}
-        />
-        <View>
-          <View style={styles.postActions}>
-            <View style={styles.leftActions}>
-              <FAIcon
-                name="heart-o"
-                size={25}
-                color="#000"
-                style={styles.icons}
-              />
-              <FAIcon
-                name="comment-o"
-                size={25}
-                color="#000"
-                style={styles.icons}
-              />
-              <FAIcon
-                name="send-o"
-                size={25}
-                color="#000"
-                style={styles.icons}
-              />
+          <Image
+            style={styles.postImage}
+            source={{
+              uri: user.postImage,
+            }}
+          />
+          <View>
+            <View style={styles.postActions}>
+              <View style={styles.leftActions}>
+                <FAIcon
+                  name="heart-o"
+                  size={25}
+                  color="#000"
+                  style={styles.icons}
+                />
+                <FAIcon
+                  name="comment-o"
+                  size={25}
+                  color="#000"
+                  style={styles.icons}
+                />
+                <FAIcon
+                  name="send-o"
+                  size={25}
+                  color="#000"
+                  style={styles.icons}
+                />
+              </View>
+              <FAIcon name="bookmark-o" size={25} color="#000" />
             </View>
-            <FAIcon name="bookmark-o" size={25} color="#000" />
-          </View>
-          <Text style={styles.postLike}>23 kişi beğendi</Text>
-          <View style={styles.postDescriptions}>
-            <Text>
-              <Text style={styles.userName}>Gizem İzmir </Text>Lorem Ipsum is
-              simply dummy text of the printing and typesetting industry...{' '}
-              <Text style={styles.postComments}>devamı</Text>
-            </Text>
-            <Text style={styles.postComments}>20 yorumun tümünü gör</Text>
-          </View>
-          <View style={styles.postNewComment}>
-            <Image
-              style={styles.postNewCommentImage}
-              source={{
-                uri: 'https://picsum.photos/300/300',
-              }}
-            />
-            <Text style={styles.postComments}>Yorum ekle...</Text>
-          </View>
-          <Text style={styles.postTime}>3 saat önce</Text>
-        </View>
-      </View>
-      <View style={styles.postContainer}>
-        <View style={styles.postHeader}>
-          <View style={styles.postUser}>
-            <Image
-              style={styles.userImage}
-              source={{
-                uri: 'https://i.pravatar.cc/300',
-              }}
-            />
-            <Text style={styles.userName}>Gizem İzmir </Text>
-          </View>
-          <MIcon name="more-vert" size={20} color="#000" />
-        </View>
-        <Image
-          style={styles.postImage}
-          source={{
-            uri: 'https://picsum.photos/305/305',
-          }}
-        />
-        <View>
-          <View style={styles.postActions}>
-            <View style={styles.leftActions}>
-              <FAIcon
-                name="heart-o"
-                size={25}
-                color="#000"
-                style={styles.icons}
+            <View style={styles.postLike}>
+              <Image
+                style={styles.postLikeImage}
+                source={{
+                  uri: 'https://i.pravatar.cc/300',
+                }}
               />
-              <FAIcon
-                name="comment-o"
-                size={25}
-                color="#000"
-                style={styles.icons}
+              <Image
+                style={styles.postLikeImageLast}
+                source={{
+                  uri: 'https://i.pravatar.cc/300',
+                }}
               />
-              <FAIcon
-                name="send-o"
-                size={25}
-                color="#000"
-                style={styles.icons}
-              />
+              <Text style={styles.postLikeText}>{user.postLiked}</Text>
             </View>
-            <FAIcon name="bookmark-o" size={25} color="#000" />
+            <View style={styles.postDescriptions}>
+              <Text>
+                <Text style={styles.userName}>{user.name} </Text>
+                {user.imageDescription}
+                <Text style={styles.postComments}> more</Text>
+              </Text>
+              <Text style={styles.postComments}>{user.postComment}</Text>
+            </View>
+            <View style={styles.postNewComment}>
+              <Image
+                style={styles.postNewCommentImage}
+                source={{
+                  uri: 'https://i.pravatar.cc/300?img=26',
+                }}
+              />
+              <Text style={styles.postComments}>Add a comment...</Text>
+            </View>
+            <Text style={styles.postTime}>{user.postDate}</Text>
           </View>
-          <Text style={styles.postLike}>23 kişi beğendi</Text>
-          <View style={styles.postDescriptions}>
-            <Text>
-              <Text style={styles.userName}>Gizem İzmir </Text>Lorem Ipsum is
-              simply dummy text of the printing and typesetting industry...{' '}
-              <Text style={styles.postComments}>devamı</Text>
-            </Text>
-            <Text style={styles.postComments}>20 yorumun tümünü gör</Text>
-          </View>
-          <View style={styles.postNewComment}>
-            <Image
-              style={styles.postNewCommentImage}
-              source={{
-                uri: 'https://picsum.photos/300/300',
-              }}
-            />
-            <Text style={styles.postComments}>Yorum ekle...</Text>
-          </View>
-          <Text style={styles.postTime}>3 saat önce</Text>
         </View>
-      </View>
+      ))}
     </View>
   );
 };
@@ -252,10 +141,31 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   postLike: {
+    display: 'flex',
+    flexDirection: 'row',
+    paddingHorizontal: 8,
+    alignItems: 'center',
+  },
+  postLikeImage: {
+    width: 20,
+    height: 20,
+    borderRadius: 20,
+    borderColor: '#bcbcbc',
+    borderWidth: 1,
+  },
+  postLikeImageLast: {
+    width: 20,
+    height: 20,
+    borderRadius: 20,
+    borderColor: '#bcbcbc',
+    borderWidth: 1,
+    marginLeft: -8,
+  },
+  postLikeText: {
     fontSize: 14,
     fontWeight: '700',
-    paddingHorizontal: 8,
     paddingVertical: 5,
+    marginLeft: 8,
   },
   postDescriptions: {
     fontSize: 14,
