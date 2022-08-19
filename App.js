@@ -11,6 +11,7 @@ import {ScrollView, StyleSheet, View, SafeAreaView} from 'react-native';
 import Header from './src/components/Header';
 import Story from './src/components/Story';
 import Post from './src/components/Post';
+import Footer from './src/components/Footer';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Post />
         </ScrollView>
       </View>
+      <Footer />
     </SafeAreaView>
   );
 };
@@ -34,6 +36,7 @@ const styles = StyleSheet.create({
     height: '100%',
     width: '100%',
     display: 'flex',
+    paddingBottom: 30,
   },
 });
 
