@@ -2,52 +2,52 @@ import React from 'react';
 import {View, StyleSheet, Image, ScrollView, Text} from 'react-native';
 
 const users = [
-    {
-        id: 1,
-        image: 'https://i.pravatar.cc/300',
-        name: 'Müslüm Gürses'
-    },
-    {
-        id: 2,
-        image: 'https://i.pravatar.cc/300',
-        name: 'Zeynep Bastık'
-    },
-    {
-        id: 3,
-        image: 'https://i.pravatar.cc/300',
-        name: 'Sena Şener'
-    },
-    {
-        id: 4,
-        image: 'https://i.pravatar.cc/300',
-        name: 'Cem Adrian'
-    },
-    {
-        id: 5,
-        image: 'https://i.pravatar.cc/300',
-        name: 'Ezhel'
-    },
-    {
-        id: 6,
-        image: 'https://i.pravatar.cc/300',
-        name: 'Melek Mosso'
-    },
-    {
-        id: 7,
-        image: 'https://i.pravatar.cc/300',
-        name: 'Ceylan Ertem'
-    },
-    {
-        id: 8,
-        image: 'https://i.pravatar.cc/300',
-        name: 'Emircan İğrek'
-    },
-    {
-        id: 9,
-        image: 'https://i.pravatar.cc/300',
-        name: 'Bülent Ersoy'
-    }
-]
+  {
+    id: 1,
+    image: 'https://i.pravatar.cc/300',
+    name: 'Müslüm Gürses',
+  },
+  {
+    id: 2,
+    image: 'https://i.pravatar.cc/300',
+    name: 'Zeynep Bastık',
+  },
+  {
+    id: 3,
+    image: 'https://i.pravatar.cc/300',
+    name: 'Sena Şener',
+  },
+  {
+    id: 4,
+    image: 'https://i.pravatar.cc/300',
+    name: 'Cem Adrian',
+  },
+  {
+    id: 5,
+    image: 'https://i.pravatar.cc/300',
+    name: 'Ezhel',
+  },
+  {
+    id: 6,
+    image: 'https://i.pravatar.cc/300',
+    name: 'Melek Mosso',
+  },
+  {
+    id: 7,
+    image: 'https://i.pravatar.cc/300',
+    name: 'Ceylan Ertem',
+  },
+  {
+    id: 8,
+    image: 'https://i.pravatar.cc/300',
+    name: 'Emircan İğrek',
+  },
+  {
+    id: 9,
+    image: 'https://i.pravatar.cc/300',
+    name: 'Bülent Ersoy',
+  },
+];
 
 const Story = () => {
   return (
@@ -68,20 +68,17 @@ const Story = () => {
           </Text>
         </View>
         {users.map((user, index) => (
-        <View 
-            style={styles.story} 
-            key={index}
-        >
-          <Image
-            style={styles.profile}
-            source={{
-              uri: user.image,
-            }}
-          />
-          <Text style={styles.title} numberOfLines={1}>
-            {user.name}
-          </Text>
-        </View>
+          <View style={styles.story} key={index}>
+            <Image
+              style={styles.profile}
+              source={{
+                uri: user.image,
+              }}
+            />
+            <Text style={styles.title} numberOfLines={1}>
+              {user.name}
+            </Text>
+          </View>
         ))}
       </ScrollView>
     </View>
@@ -94,7 +91,6 @@ const styles = StyleSheet.create({
     height: 100,
     display: 'flex',
     justifyContent: 'center',
-    paddingHorizontal: 15,
     marginBottom: 5,
     borderBottomColor: '#bcbcbc',
     borderBottomWidth: 1,

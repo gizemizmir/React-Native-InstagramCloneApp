@@ -6,7 +6,7 @@ import RightIcons from './RightIcons';
 const Header = () => {
   return (
     <View style={styles.topHeader}>
-      <Logo logoUrl={require('../assets/logo.png')}/>
+      <Logo logoUrl={require('../assets/logo.png')} />
       <RightIcons />
     </View>
   );

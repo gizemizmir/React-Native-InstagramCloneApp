@@ -7,20 +7,21 @@
  */
 
 import React from 'react';
-import {ScrollView, StyleSheet, Text, View, SafeAreaView} from 'react-native';
+import {ScrollView, StyleSheet, View, SafeAreaView} from 'react-native';
 import Header from './src/components/Header';
 import Story from './src/components/Story';
+import Post from './src/components/Post';
 
 const App = () => {
   return (
     <SafeAreaView>
       <View style={styles.container}>
         <Header />
-        <Story />
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.container}>
-          <Text> sadasdasdsds </Text>
+          <Story />
+          <Post />
         </ScrollView>
       </View>
     </SafeAreaView>

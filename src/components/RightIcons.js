@@ -1,7 +1,6 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
 import FAIcon from 'react-native-vector-icons/FontAwesome';
-import MIcon from 'react-native-vector-icons/MaterialIcons';
 import FABIcon from 'react-native-vector-icons/FontAwesome5';
 
 const RightIcons = () => {
@@ -13,12 +12,7 @@ const RightIcons = () => {
         color="#000"
         style={styles.icons}
       />
-      <MIcon
-        name="notifications-none"
-        size={25}
-        color="#000"
-        style={styles.icons}
-      />
+      <FAIcon name="heart-o" size={25} color="#000" style={styles.icons} />
       <FABIcon
         name="facebook-messenger"
         size={25}
@@ -39,7 +33,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   icons: {
-    marginHorizontal: 5,
+    marginHorizontal: 8,
   },
 });
 
