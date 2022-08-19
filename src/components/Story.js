@@ -1,13 +1,61 @@
 import React from 'react';
 import {View, StyleSheet, Image, ScrollView, Text} from 'react-native';
 
+const users = [
+    {
+        id: 1,
+        image: 'https://i.pravatar.cc/300',
+        name: 'Müslüm Gürses'
+    },
+    {
+        id: 2,
+        image: 'https://i.pravatar.cc/300',
+        name: 'Zeynep Bastık'
+    },
+    {
+        id: 3,
+        image: 'https://i.pravatar.cc/300',
+        name: 'Sena Şener'
+    },
+    {
+        id: 4,
+        image: 'https://i.pravatar.cc/300',
+        name: 'Cem Adrian'
+    },
+    {
+        id: 5,
+        image: 'https://i.pravatar.cc/300',
+        name: 'Ezhel'
+    },
+    {
+        id: 6,
+        image: 'https://i.pravatar.cc/300',
+        name: 'Melek Mosso'
+    },
+    {
+        id: 7,
+        image: 'https://i.pravatar.cc/300',
+        name: 'Ceylan Ertem'
+    },
+    {
+        id: 8,
+        image: 'https://i.pravatar.cc/300',
+        name: 'Emircan İğrek'
+    },
+    {
+        id: 9,
+        image: 'https://i.pravatar.cc/300',
+        name: 'Bülent Ersoy'
+    }
+]
+
 const Story = () => {
   return (
     <View style={styles.storyContainer}>
       <ScrollView showsHorizontalScrollIndicator={false} horizontal={true}>
         <View style={styles.story}>
           <Image
-            style={styles.avatar}
+            style={styles.profile}
             source={{
               uri: 'https://i.pravatar.cc/300',
             }}
@@ -19,72 +67,22 @@ const Story = () => {
             Your story
           </Text>
         </View>
-        <View style={styles.story}>
+        {users.map((user, index) => (
+        <View 
+            style={styles.story} 
+            key={index}
+        >
           <Image
-            style={styles.avatar}
+            style={styles.profile}
             source={{
-              uri: 'https://i.pravatar.cc/300',
+              uri: user.image,
             }}
           />
           <Text style={styles.title} numberOfLines={1}>
-            Gizem İzmir
+            {user.name}
           </Text>
         </View>
-        <View style={styles.story}>
-          <Image
-            style={styles.avatar}
-            source={{
-              uri: 'https://i.pravatar.cc/300',
-            }}
-          />
-          <Text style={styles.title} numberOfLines={1}>
-            Gizem İzmir
-          </Text>
-        </View>
-        <View style={styles.story}>
-          <Image
-            style={styles.avatar}
-            source={{
-              uri: 'https://i.pravatar.cc/300',
-            }}
-          />
-          <Text style={styles.title} numberOfLines={1}>
-            Gizem İzmir
-          </Text>
-        </View>
-        <View style={styles.story}>
-          <Image
-            style={styles.avatar}
-            source={{
-              uri: 'https://i.pravatar.cc/300',
-            }}
-          />
-          <Text style={styles.title} numberOfLines={1}>
-            Gizem İzmir
-          </Text>
-        </View>
-        <View style={styles.story}>
-          <Image
-            style={styles.avatar}
-            source={{
-              uri: 'https://i.pravatar.cc/300',
-            }}
-          />
-          <Text style={styles.title} numberOfLines={1}>
-            Gizem İzmir
-          </Text>
-        </View>
-        <View style={styles.story}>
-          <Image
-            style={styles.avatar}
-            source={{
-              uri: 'https://i.pravatar.cc/300',
-            }}
-          />
-          <Text style={styles.title} numberOfLines={1}>
-            Gizem İzmir
-          </Text>
-        </View>
+        ))}
       </ScrollView>
     </View>
   );
@@ -102,11 +100,14 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
   },
   story: {
-    width: 70,
+    width: 75,
     marginRight: 10,
     position: 'relative',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
-  avatar: {
+  profile: {
     width: 64,
     height: 64,
     borderWidth: 2,
@@ -133,7 +134,6 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 13,
     marginTop: 3,
-    textAlign: 'center',
   },
 });
 
