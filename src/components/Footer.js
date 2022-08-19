@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, StyleSheet, Image} from 'react-native';
+import {Platform, View, StyleSheet, Image} from 'react-native';
 import MIcon from 'react-native-vector-icons/MaterialIcons';
 import FAIcon from 'react-native-vector-icons/FontAwesome';
 
@@ -22,7 +22,7 @@ const Footer = () => {
 
 const styles = StyleSheet.create({
   bottomBar: {
-    height: 65,
+    height: Platform.OS === 'ios' ? 65 : 50,
     backgroundColor: 'white',
     position: 'absolute',
     bottom: 0,
