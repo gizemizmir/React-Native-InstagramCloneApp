@@ -1,7 +1,9 @@
 
 # React Native Instagram UI Clone
 
-Bu proje Patika.dev 'in düzenlediği "Akbank React Native Bootcamp" kapsamında yapılan ilk ödevdir. Instagram uygulamasının anasayfasının arayüz tasarımını içermektedir. 
+EN - This project is the first assignment within the scope of "Akbank React Native Bootcamp" organized by Patika.dev. It includes the interface design of the main screen of the Instagram application.
+
+TR - Bu proje Patika.dev 'in düzenlediği "Akbank React Native Bootcamp" kapsamında yapılan ilk ödevdir.  Instagram uygulamasının anasayfasının arayüz tasarımını içermektedir. 
 
 ## Screenshot IOS
 
